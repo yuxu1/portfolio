@@ -14,21 +14,21 @@
         <div class="header-container">
             <header class="page-header">
                 <!-- insert logo -->
-                <img src="img/profile-logo.png" alt="Yufan Xu Personal Logo" class="page-header_item" id="logo">
+                <img src="img/profile-logo.png" alt="Yufan Xu Personal Logo" class="page-header__item" id="logo">
                 <!-- navigation menu -->
                  <nav class="page-header_item">
                     <ul class="navigation-list" role="menubar">
                         <li role="presentation">
-                            <a href="#home" class="navigation-list_item" role="menuitem">Home</a>
+                            <a href="#home" class="navigation-list__item" role="menuitem">Home</a>
                         </li>
                         <li role="presentation">
-                            <a href="#about" class="navigation-list_item" role="menuitem">About</a>
+                            <a href="#about" class="navigation-list__item" role="menuitem">About</a>
                         </li>
                         <li role="presentation">
-                            <a href="#work" class="navigation-list_item" role="menuitem">Work</a>
+                            <a href="#work" class="navigation-list__item" role="menuitem">Work</a>
                         </li>
                         <li role="presentation">
-                            <a href="#contact" class="navigation-list_item" role="menuitem">Contact</a>
+                            <a href="#contact" class="navigation-list__item" role="menuitem">Contact</a>
                         </li>
                     </ul>
                  </nav>
@@ -39,15 +39,167 @@
         <!-- main content starts -->
          <!-- Home or Intro section (intro,portrait,call to action-contact me or see work) -->
          <section id="home">
-
+            <div class="profile">
+                <img src="img/profile-portrait.png">
+                <div class="profile__text">
+                    <h2>Welcome! I am... </h2>
+                    <h1>Yufan Xu<br>Web Developer</h1>
+                    <p>
+                        I am a full stack web developer with a focus on frontend development. To pursue a 
+                        previously unexplored interest in coding, I completed Career Foundry's Full Stack Web 
+                        Development program, where I learned through hands-on projects the fundamentals of 
+                        <strong>JavaScript</strong>, <strong>Python</strong>, <strong>NoSQL</strong>, related 
+                        frameworks and libraries like <strong>React</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, 
+                        <strong>Django</strong>, and more.
+                        <br>
+                        I am based in San Francisco, CA and seeking opportunities to further develop my coding skills in the area or open to remote as well. 
+                        If you have an opportunity for me, or are interested in connecting, please feel free to reach out! I look forward to speaking with you!
+                        <br><br>
+                        <a href="files/Xu,Yufan_Resume.pdf" target="_blank">View my resume</a>
+                    </p>
+                    <a href="#work" class="button">See my Work</a>
+                    <a href="#contact" class="button">Get in Touch</a>
+                </div>
+            </div>
          </section>
          <!-- About Me (include quick bio/background,toolbelt,resume,and hometown graphic) -->
          <section id="about">
-
+            <!-- toolbelt -->
+            <div class="toolbelt">
+                <h1>Toolbelt</h1>
+                <div class="toolbelt__logos">
+                    <!-- logos of tools/graphic -->
+                </div>
+                <div class="toolbelt__list">
+                    <!-- toolbelt as text/blocks/labels -->
+                    <span class="toolbelt__list-item">JavaScript</span>
+                    <span class="toolbelt__list-item">React</span>
+                    <span class="toolbelt__list-item">Angular</span>
+                    <span class="toolbelt__list-item">Bootstrap</span>
+                    <span class="toolbelt__list-item">CSS</span>
+                    <span class="toolbelt__list-item">HTML5</span>
+                    <span class="toolbelt__list-item">Node.js</span>
+                    <span class="toolbelt__list-item">Express</span>
+                    <span class="toolbelt__list-item">MongoDB</span>
+                    <span class="toolbelt__list-item">SQL</span>
+                    <span class="toolbelt__list-item">NoSQL</span>
+                    <span class="toolbelt__list-item">PostgreSQL</span>
+                    <span class="toolbelt__list-item">Google Firebase</span>
+                    <span class="toolbelt__list-item">Google Firestore</span>
+                    <span class="toolbelt__list-item">jQuery</span>
+                    <span class="toolbelt__list-item">Visual Studio</span>
+                    <span class="toolbelt__list-item">Postman</span>
+                    <span class="toolbelt__list-item">Passport</span>
+                    <span class="toolbelt__list-item">Parcel</span>
+                    <span class="toolbelt__list-item">Recharts</span>
+                    <span class="toolbelt__list-item">Jest</span>
+                    <span class="toolbelt__list-item">Cucumber</span>
+                    <span class="toolbelt__list-item">Puppeteer</span>
+                    <span class="toolbelt__list-item">AWS Lambda</span>
+                    <span class="toolbelt__list-item">React Native</span>
+                    <span class="toolbelt__list-item">Python</span>
+                    <span class="toolbelt__list-item">Django</span>
+                    <span class="toolbelt__list-item">pandas</span>
+                    <span class="toolbelt__list-item">matplotlib</span>
+                    <span class="toolbelt__list-item">WhiteNoise</span>
+                    <span class="toolbelt__list-item">Cloudinary</span>
+                    <span class="toolbelt__list-item">JSDoc</span>
+                    <span class="toolbelt__list-item">TypeDoc</span>
+                    <span class="toolbelt__list-item">TypeScript</span>
+                    <span class="toolbelt__list-item">Android Studio</span>
+                    <span class="toolbelt__list-item">REST API</span>
+                </div>
+            </div>
+            <div class="about">
+                <h1>About Me</h1>
+                <div class="about__item">
+                    <h2>My Background</h2>
+                    <div class="about__item-contents">
+                        <img src="placeholder" alt="placeholder image">
+                        <p>
+                            I was born in the city of Taishan in China's Guangdong province, but I grew up in 
+                            San Francisco after my family immigrated here when I was two years old. For me 
+                            San Francisco is home, and I love its diverse people and beautiful parks, so I 
+                            have returned to the city after college. <br>
+                            I studied Business Administration with concentrations in Management and 
+                            Supply Chain & Operations Management at Northeastern University in Boston. I then went 
+                            on to pursue a business career that led me through a wide range of industries and 
+                            work environments. My curiosity and eagerness to keep learning has brought me to 
+                            make a big decision in my career - to switch paths and enter the field of tech.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <h2>Why I Want to Be a Web Developer</h2>
+                    <div class="about__item-contents">
+                        <img src="" alt="placeholder-image-for-lowell">
+                        <p>
+                            The first exposure I had to coding was in a computer programming class back 
+                            at Lowell High School. The memory is hazy now, but I remember working on  
+                            programming tasks, including coding the functions of a dice and recreating games 
+                            like Minesweeper and Asteroids. I remember it as an intriguing class with its 
+                            annoying bits of debugging, but at the time I did not see it as a career choice ...
+                            but things change. <br>
+                            After exploring the field of business for several years, the thought of doing something 
+                            different crossed my mind more and more often. I realized that I was better suited to 
+                            work behind the scenes, especially behind a computer. I came across the Web Development 
+                            program with Career Foundry and took the chance by registering, and I am glad I did. I 
+                            I find peace in solving puzzles, and there are many puzzles we encounter in coding and web 
+                            development. Although it became frustrating at times, it would be rewarding when it is finally 
+                            resolved. I enjoy building things and see the direct results of my work, which is why 
+                            after getting exposed to both the front and back end services, I am seeking to focus on the 
+                            front end, at least in the beginning of my new career.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <h2>My Interests</h2>
+                    <div class="about__item-contents">
+                        <img src="" alt="placeholder-for-hiking/scenery">
+                        <p>
+                            Outside of work, I enjoy solving puzzles (all kinds, but particularly jigsaw, word, 
+                            and number puzzles), hiking, bouldering, and listening to music. For relaxation I especially enjoy 
+                            hikes with gorgeous views of mountains or bodies of water (fun fact:this helped inspire the AI-generated design of the 
+                            favicon and logo I used in this portfolio).<br>
+                            I also love traveling and desire to do more of it, and relatedly I find it fascinating to learn 
+                            about different cultures and languages. Maybe part of the reason why I am interested in coding is because 
+                            it is like learning a new language (multiple different languages actually), and there are many problems (think puzzles) 
+                            waiting to be solved. As someone with a strong growth mindset, I am excited by the fact that there will always be more 
+                            for me to learn in this field no matter how experienced I become.
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
          </section>
-         <!-- Work (showcase projects) -->
-         <section id="work">
+         <!-- Work -->
+         <section id="work" class="work">
+            <h1>Work</h1>
+            <div class="project-list">
+                <!-- project 1 -->
+                <div class="project-list__item">
+                    <!-- Title of project & "expand details" icon -->
+                    <h2>Recipe App (Web Ver.)<a class="open-modal"><img src="img/expand_icon.svg"></a></h2>
+                    <!-- clickable project image - lead to demo -->
+                    <a href="https://sensible-elva-yuxu1-946856e4.koyeb.app/" target="_blank"><img src="img/recipe-app-screenshot.png"></a>
+                    <p class="project-description">
 
+                    </p>
+                    <a href="https://github.com/yuxu1/recipe_project" target="_blank" class="button">Code</a>
+                    <a href="files/case_study_recipe_app.pdf" target="_blank" class="button">Case</a>
+                    <a href="https://sensible-elva-yuxu1-946856e4.koyeb.app/" target="_blank"  class="button">Demo</a>
+                    <dialog class="modal">
+                        <h2>Recipe App (Web Ver.)<a class="close-modal"><img src="img/close-icon.svg"></a></h2>
+                    </dialog>
+                </div>
+                <!-- project 2 -->
+                <!-- project 3 -->
+                <!-- project 4 -->
+                <!-- project 5 -->
+                <!-- project 6 -->
+                <!-- project 7 -->
+                <!-- project 8 -->
+            </div>
          </section>
          <!-- Contact Me section -->
          <section id="contact">
