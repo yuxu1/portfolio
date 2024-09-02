@@ -697,11 +697,11 @@ a:active {
 }
 
 /* disabled button */
-.inactive-button::after {
+.disabled-button::after {
     background-color: #abaaaa;
 }
 
-.inactive-button:hover::after, .inactive-button:focus::after {
+.disabled-button:hover::after, .disabled-button:focus::after {
     top: 7px;
     left:7px;
 }
