@@ -218,11 +218,14 @@ a:active {
 }
 
 .profile__portrait {
-    max-width: 500px;
-    max-height: 500px;
+    /* margin-right:50px;
+    margin-bottom:10px; */
+    width:400px;
+    /* max-width: 400px;
+    max-height: 400px; */
     margin: 35px 50px;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 15px;
     object-fit: cover;
 }
 
@@ -554,6 +557,7 @@ a:active {
     }
     .profile__portrait {
         margin-bottom: 25px;
+        border-radius:50%;
     }
     .profile__text h1 {
         font-size: 20px;
@@ -586,10 +590,11 @@ a:active {
         margin-right:50px;
         margin-bottom:10px;
         width:100%;
-        max-width:500px;
-        max-height:500px;
+        max-width:250px;
+        max-height:250px;
         object-fit:contain;
         padding:10px;
+        border-radius:50%;
     }
     .profile__text {
         flex:auto;
@@ -641,12 +646,13 @@ a:active {
     }
     .profile__portrait {
         margin-right: -50%;
-        margin-bottom: -200%;
+        margin-bottom: -200px;
         width: 100%;
         max-width: 250px;
         max-height: 250px;
         object-fit: contain;
         padding: 10px;
+        border-radius:50%;
     }
     .profile__text {
         flex:auto;
