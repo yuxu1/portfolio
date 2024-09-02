@@ -339,7 +339,7 @@ a:active {
 }
 
 .about {
-    max-width: 75%;
+    max-width: 80%;
     margin: 20vh auto;
 }
 
@@ -365,6 +365,11 @@ a:active {
 
 .about__item p {
     line-height: 1.8;
+    text-align: justify;
+}
+
+.about__item-contents {
+    display: flex;
 }
 
 .about__item-contents svg,img {
@@ -603,14 +608,15 @@ a:active {
     }
     .profile__text {
         flex:auto;
+        margin: 5px;
+        text-align: center;
     }
     .button {
         padding: 8px 25px 8px;
     }
     .profile__text .button {
         width:100%;
-        margin-right:10px;
-        margin-left:10px;
+        margin: 5px;
         float:none;
         text-align:center;
     }
@@ -624,12 +630,18 @@ a:active {
     h2 {
         font-size: 20px;
     }
+    .about h2 {
+        text-align: center;
+    }
     .about__item-contents {
         display:flex;
+        flex-direction: column;
+        text-align: center;
     }
-    /* .about__item-contents img {
-        display:none;
-    } */
+    .about__item-contents img {
+        align-self: center;
+        width: 60%;
+    }
     .project-list {
         grid-gap: 15px;
         grid-template-columns: 1fr;
@@ -671,8 +683,8 @@ a:active {
         display: inline-block;
     }
     .about__item-contents img {
-        object-fit:contain;
-        float: inline-start;
+        float: left;
+        width: 50%;
     }
     .project-list {
         grid-template-columns: 1fr 1fr;
@@ -690,9 +702,9 @@ a:active {
     }
 }
 
-/* for 1400px - 1600px */
+/* for 1400px + */
 /* affecting: profile h1, project list p */
-@media all and (min-width:1400px) and (max-width:1600px) {
+@media all and (min-width:1400px) {
     .profile__text h1 {
         font-size: 35px;
     }
