@@ -15,7 +15,7 @@
 }
 
 :root {
-    --primary-color:#609A9D;
+    --primary-color:#568B8C;
     --secondary-color:#6c5291;
     --text-color: #000;
     --font-weight-regular: 400;
@@ -108,8 +108,8 @@ a:active {
     /* set psedo-element behind,slightly below to the right of button */
     z-index: -1;
     position: absolute;
-    top: 7px;
-    left:7px;
+    top: 8px;
+    left:8px;
     transition: 0.5s;
     transition-timing-function: ease-in-out;
     text-decoration: underline transparent;
@@ -153,7 +153,8 @@ a:active {
 
 .tag:hover {
     /* shift tag slightly up on hover */
-    transform: translate(0, -2px);
+    /* transform: translate(0, -2px); */
+    box-shadow: 2px 2px 10px 1px rgba(78, 38, 188, 0.5);
 }
 
 /* header */
@@ -298,6 +299,29 @@ a:active {
 
 .toolbelt:hover .toolbelt__logos {
     animation-play-state: paused;
+}
+
+.toolbelt__list {
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbelt__list-item {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 3px 10px;
+    background: rgba(128,128,128,0.6);
+    color: #fff;
+    margin: 5px;
+    transition: 0.4s;
+}   
+
+.toolbelt__list-item:hover {
+    box-shadow: 2px 2px 10px 1px rgba(78, 38, 188, 0.5);
 }
 
 /* About Me */
