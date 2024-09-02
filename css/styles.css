@@ -299,7 +299,7 @@ a:active {
     padding: 30px 0;
     /* width:4000px; */
     overflow-x: hidden;
-    animation: 45s toolbelt infinite linear;
+    animation: 50s toolbelt infinite linear;
     vertical-align: center;
 }
 
