@@ -74,10 +74,18 @@ a:hover,a:focus {
 }
 
 /* selected link */
-a:active {
+/* a:active {
     color: var(--secondary-color);
     text-decoration-color: var(--secondary-color)
+} */
+
+.navigation-list__item:hover, .navigation-list__item:focus {
+    text-decoration-color: transparent;
+    box-shadow: 0 0 0 10px #EFEDF6;
+    background: #EFEDF6;
+    border-radius: 15px;
 }
+
 
 /* button styling */
 .button {
@@ -193,6 +201,10 @@ a:active {
 
 .active {
     color:var(--secondary-color);
+    text-decoration-color: transparent;
+    box-shadow: 0 0 0 10px #EFEDF6;
+    background: #EFEDF6;
+    border-radius: 15px;
 }
 
 #logo {
