@@ -731,3 +731,63 @@ a:active {
     height:16px;
     content:"";
 }
+
+/* sf graphic */
+.sf-graphic {
+    display: flex;
+    justify-content: center;
+}
+#sf-graphic {
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #FFBE24;
+    }
+
+    50% {
+        fill: #e88e20;
+    }
+
+    100% {
+        fill: #f0413e;
+    }
+}
+
+/*animate sun-change colors*/
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+/*animate orange speedboat movement*/
+@keyframes speedboat-moving {
+    from {
+        transform: translate(-15%, 50px);
+    }
+
+    to {
+        transform: translate(100%, 50px);
+    }
+}
+
+.speedboat {
+    animation: 10s speedboat-moving infinite normal linear;
+}
+
+/*animate blue-yellow sailboat movement*/
+@keyframes sailboat-moving {
+    from {
+        transform: translate(15%, -20px);
+    }
+
+    to {
+        transform: translate(-100%, -20px);
+    }
+}
+
+.sailboat {
+    animation: 20s sailboat-moving infinite normal linear;
+}
