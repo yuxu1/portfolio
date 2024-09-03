@@ -9,6 +9,7 @@
         <!-- import normalize.css -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="header-container">
@@ -40,8 +41,22 @@
          <!-- Home or Intro section (intro,portrait,call to action-contact me or see work) -->
          <section id="home">
             <div class="profile">
-                <img src="img/profile-portrait.png" alt="Yufan-Portrait" class="profile__portrait">
-                <div class="profile__text">
+                <img src="img/profile-portrait.png" 
+                    alt="Yufan-Portrait"
+                    class="profile__portrait"
+                    data-aos="fade-right"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                >
+                <div class="profile__text"
+                    data-aos="fade-left"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                >
                     <h2>Welcome! I am... </h2>
                     <h1>Yufan Xu<br>Web Developer</h1>
                     <p>
@@ -98,7 +113,7 @@
                     <img src="img/tools-logos/visual-studio.svg" alt="Visual Studio logo">
                 </div>
                 <!-- duplicate set for continuity in carousel animation -->
-                <div class="toolbelt__logos" id="second-list">
+                <div class="toolbelt__logos">
                     <img src="img/tools-logos/android-studio.svg" alt="Android Studio logo">
                     <img src="img/tools-logos/angular.svg" alt="Angular logo">
                     <img src="img/tools-logos/aws-lambda.png" alt="AWS Lambda logo">
@@ -129,7 +144,13 @@
                 </div>
             </div>
             <!-- toolbelt as text/blocks/labels -->
-            <div class="toolbelt__list">
+            <div 
+                class="toolbelt__list"
+                data-aos="fade-up"
+                data-aos-delay="30"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+            >
                 <span class="toolbelt__list-item">JavaScript</span>
                 <span class="toolbelt__list-item">React</span>
                 <span class="toolbelt__list-item">Angular</span>
@@ -171,7 +192,13 @@
                 <h1>About Me</h1>
                 <div class="about__item">
                     <h2>My Background</h2>
-                    <div class="about__item-contents">
+                    <div 
+                        class="about__item-contents"
+                        data-aos="fade-right"
+                        data-aos-delay="30"
+                        data-aos-duration="800"
+                        data-aos-easing="ease-in-out"
+                    >
                         <p>
                             I was born in the city of Taishan in China's Guangdong province, but I grew up in 
                             San Francisco after my family immigrated here when I was two years old. For me 
@@ -186,7 +213,13 @@
                     </div>
                     
                 </div>
-                <div class="about__item sf-graphic">
+                <div 
+                    class="about__item sf-graphic"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                >
                     <!--SVG code for san francisio graphic (animated)-->
                     <svg id="sf-graphic" xmlns="http://www.w3.org/2000/svg">
                         <defs>
@@ -1214,8 +1247,19 @@
                 <div class="about__item">
                     <h2>Why I Want to Be a Web Developer</h2>
                     <div class="about__item-contents">
-                        <img src="img/computer.jpg" alt="image-of-computer">
-                        <p>
+                        <img src="img/computer.jpg"
+                            alt="image-of-computer"
+                            data-aos="fade-left"
+                            data-aos-delay="30"
+                            data-aos-duration="800"
+                            data-aos-easing="ease-in-out"
+                        >
+                        <p 
+                            data-aos="fade-right"
+                            data-aos-delay="30"
+                            data-aos-duration="800"
+                            data-aos-easing="ease-in-out"
+                        >
                             The first exposure I had to coding was in a computer programming class back 
                             at Lowell High School. The memory is hazy now, but I remember working on  
                             programming tasks, including coding the functions of a dice and recreating games 
@@ -1237,8 +1281,19 @@
                 <div class="about__item">
                     <h2>My Interests</h2>
                     <div class="about__item-contents">
-                        <img src="img/mount_tam.png" alt="view from Mount Tamalpais">
-                        <p>
+                        <img src="img/mount_tam.png" 
+                            alt="view from Mount Tamalpais"
+                            data-aos="fade-left"
+                            data-aos-delay="30"
+                            data-aos-duration="800"
+                            data-aos-easing="ease-in-out"
+                        >
+                        <p 
+                            data-aos="fade-right"
+                            data-aos-delay="30"
+                            data-aos-duration="800"
+                            data-aos-easing="ease-in-out"
+                        >
                             Outside of work, I enjoy solving puzzles (all kinds, but particularly jigsaw, word, 
                             and number puzzles), hiking, bouldering, and listening to music. For relaxation I especially enjoy 
                             hikes with gorgeous views of mountains or bodies of water (fun fact:this helped inspire the AI-generated design of the 
@@ -1258,7 +1313,12 @@
             <h1>Work</h1>
             <div class="project-list">
                 <!-- project 1 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <div class="project-list__item-heading">
                         <h2>Recipe App (Web)</h2>
                         <a class="open-modal"><img src="img/expand_icon.svg"></a>
@@ -1315,7 +1375,12 @@
                     </dialog>
                 </div>
                 <!-- project 2 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <div class="project-list__item-heading">
                         <h2>myFlix Client (React)</h2>
                         <a class="open-modal"><img src="img/expand_icon.svg"></a>
@@ -1371,7 +1436,12 @@
                     </dialog>
                 </div>
                 <!-- project 3 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <!-- Title of project & "expand details" icon -->
                     <div class="project-list__item-heading">
                         <h2>Meet App</h2>
@@ -1423,7 +1493,12 @@
                     </dialog>
                 </div>
                 <!-- project 4 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <!-- Title of project & "expand details" icon -->
                     <div class="project-list__item-heading">
                         <h2>Chat App</h2>
@@ -1476,7 +1551,12 @@
                     </dialog>
                 </div>
                 <!-- project 5 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <!-- Title of project & "expand details" icon -->
                     <div class="project-list__item-heading">
                         <h2>myFlix API</h2>
@@ -1531,7 +1611,12 @@
                     </dialog>
                 </div>
                 <!-- project 6 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <!-- Title of project & "expand details" icon -->
                     <div class="project-list__item-heading">
                         <h2>myFlix Client (Angular)</h2>
@@ -1586,7 +1671,12 @@
                     </dialog>
                 </div>
                 <!-- project 7 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <!-- Title of project & "expand details" icon -->
                     <div class="project-list__item-heading">
                         <h2>Recipe App (CLI)</h2>
@@ -1634,7 +1724,12 @@
                     </dialog>
                 </div>
                 <!-- project 8 -->
-                <div class="project-list__item">
+                <div class="project-list__item"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <!-- Title of project & "expand details" icon -->
                     <div class="project-list__item-heading">
                         <h2>Pokedex App</h2>
@@ -1687,7 +1782,12 @@
          <!-- Contact Me section -->
          <section id="contact">
             <div class="contact">
-                <div class="contact__information">
+                <div class="contact__information"
+                    data-aos="fade-up"
+                    data-aos-delay="30"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
                     <h1>Contact Me</h1>
                     <p>
                         <b>I am based in San Francisco (able to commute) and open to remote roles.<br>
@@ -1712,5 +1812,7 @@
             <a href="#top">Back to top</a>
          </footer>
          <script src="js/scripts.js"></script>
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <script>AOS.init();</script>
     </body>
 </html>
