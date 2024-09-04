@@ -404,7 +404,7 @@ a:hover,a:focus {
 }
 
 .work {
-    max-width: 80%;
+    width: 80%;
     margin: 20vh auto;
 }
 
@@ -428,12 +428,13 @@ a:hover,a:focus {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
         margin:0;
+        /* place-content: center; */
     }
     .project-list__item {
         background-color: rgba(168,152,152,0.15);
         width: auto;
         min-height: auto;
-        margin: 0;
+        margin:0;
         border-radius: 15px;
         box-shadow: 0 4px 30px rgba(0,0,0,0.1);
         backdrop-filter: blur(10px);
@@ -463,6 +464,12 @@ a:hover,a:focus {
     margin-right: 20px;
     margin-bottom: 20px;
     float:right;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .modal {
@@ -587,16 +594,24 @@ a:hover,a:focus {
     margin: 5px;
 }
 
+@media all and (max-width:435px) {
+    .project-links a {
+        padding: 6px 14px 6px;
+    }
+}
 /* Media Queries */
-/* for under 500px */
+/* for under 520px */
 /* affecting: profile(home),contact */
-@media all and (max-width:500px) {
+@media all and (max-width:520px) {
     .profile {
-        max-width: 320px;
+        width: 90%;
     }
     .profile__portrait {
         margin-bottom: 25px;
         border-radius:50%;
+    }
+    .profile__text {
+        padding: 5px;
     }
     .profile__text h1 {
         font-size: 20px;
@@ -604,17 +619,50 @@ a:hover,a:focus {
     .profile__text h2 {
         font-size: 18px;
     }
+    .about__item {
+        padding: 5px;
+    }
     #contact {
         padding: 10px;
     }
     .contact {
         margin:0 0;
     }
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        gap: 3px;
+        font-size: 14px;
+    }
+    .navigation-list__item:hover,
+    .navigation-list__item:focus,
+    .active {
+        box-shadow: 0 0 0 6px #EFEDF6;
+        background: #EFEDF6;
+        border-radius: 15px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .toolbelt__list-item {
+        font-size: 14px;
+    }
+    .project-list {
+        max-width: 90%;
+    }
+    .project-links {
+        font-size: 14px;
+    }
+    .project-links a::after {
+        top: 7px;
+        left: 7px;
+    }
 }
 
 /* for under 750px */
 /* affecting: navigation, profile(home), toolbelt, about, project list, button, h1 */
-@media all and (max-width:750px) {
+@media all and (max-width:749px) {
     ul {
         padding-inline-start: 0;
     }
@@ -717,28 +765,39 @@ a:hover,a:focus {
     }
     .project-list {
         grid-template-columns: 1fr 1fr;
+        grid-gap: 35px;
+        
     }
     .button {
         padding: 13px 25px 13px;
     }
 }
 
-/* for 500px - 1400px */
+@media all and (min-width:750px) and (max-width:950px) {
+    .project-links a {
+        padding: 6px 14px 6px;
+    }
+}
+
+/* for 500px - 1350px */
 /* affecting: profile h1 */
-@media all and (min-width:500px) and (max-width:1400px) {
+@media all and (min-width:500px) and (max-width:1350px) {
     .profile__text h1 {
         font-size: 30px;
     }
 }
 
-/* for 1400px + */
+/* for 1350px + */
 /* affecting: profile h1, project list p */
-@media all and (min-width:1400px) {
+@media all and (min-width:1350px) {
     .profile__text h1 {
         font-size: 35px;
     }
     .project-description {
         min-height: 180px;
+    }
+    .project-links a {
+        padding: 8px 20px 8px;
     }
 }
 
