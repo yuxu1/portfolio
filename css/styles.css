@@ -599,9 +599,6 @@ a:hover,a:focus {
     .project-links a {
         padding: 6px 14px 6px;
     }
-    .about__item p{
-        text-align: center;
-    }
 }
 
 /* for under 520px */
@@ -626,6 +623,9 @@ a:hover,a:focus {
     .about__item {
         padding: 5px;
     }
+    .about__item p{
+        text-align: center;
+    }
     #contact {
         padding: 10px;
     }
@@ -636,13 +636,13 @@ a:hover,a:focus {
         display: flex;
         flex-direction: column;
         justify-content: right;
-        gap: 3px;
+        gap: 4px;
         font-size: 14px;
     }
     .navigation-list__item:hover,
     .navigation-list__item:focus,
     .active {
-        box-shadow: 0 0 0 6px #EFEDF6;
+        box-shadow: 0 0 0 5px #EFEDF6;
         background: #EFEDF6;
         border-radius: 15px;
     }
