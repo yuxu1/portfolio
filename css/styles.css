@@ -599,6 +599,9 @@ a:hover,a:focus {
     .project-links a {
         padding: 6px 14px 6px;
     }
+    .about__item p{
+        text-align: center;
+    }
 }
 
 /* for under 520px */
@@ -622,9 +625,6 @@ a:hover,a:focus {
     }
     .about__item {
         padding: 5px;
-    }
-    .about__item p{
-        text-align: center;
     }
     #contact {
         padding: 10px;
