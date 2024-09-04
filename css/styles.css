@@ -593,13 +593,17 @@ a:hover,a:focus {
     width: 60px;
     margin: 5px;
 }
-
-@media all and (max-width:435px) {
+/* Media Queries */
+/* for extra small screens */
+@media all and (max-width:400px) {
     .project-links a {
         padding: 6px 14px 6px;
     }
+    .about__item p{
+        text-align: center;
+    }
 }
-/* Media Queries */
+
 /* for under 520px */
 /* affecting: profile(home),contact */
 @media all and (max-width:520px) {
